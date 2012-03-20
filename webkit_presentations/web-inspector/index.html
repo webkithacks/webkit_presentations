@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Web-Inspector</title>
+	
+	<meta name="description" content="A jQuery library for modern HTML presentations">
+	<meta name="author" content="Caleb Troughton">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="../deckjs/core/deck.core.css">
+	<link rel="stylesheet" href="../deckjs/extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="../deckjs/extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="../deckjs/extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="../deckjs/extensions/status/deck.status.css">
+	<link rel="stylesheet" href="../deckjs/extensions/hash/deck.hash.css">
+	
+	<!-- Theme CSS files (menu swaps these out) -->
+	<link rel="stylesheet" id="style-theme-link" href="../deckjs/themes/style/adobe.css">
+	<link rel="stylesheet" id="transition-theme-link" href="../deckjs/themes/transition/horizontal-slide3d.css">
+	
+	<link href='http://fonts.googleapis.com/css?family=Signika:300,400,600' rel='stylesheet' type='text/css'>
+	
+	<!-- Custom CSS just for this page -->
+	<link rel="stylesheet" href="introduction.css">
+	
+	<script src="../deckjs/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+	
+<div class="logo"></div>
+
+<section class="slide" id="title-slide">
+	<div class="vcenter">
+	<h1>WebInspector</h1>
+	<p>
+		Alexandru Chiculita, Computer Scientist, WebKit team
+	</p>
+	</div>
+</section>
+
+<section class="slide" id="origins">
+	<div class="vcenter">
+		<div>
+			<h2>Drosera</h2>
+			<h3>First WebKit JavaScript debugger</h3>
+			<p>Developed by Apple</p>
+			<a href="http://trac.webkit.org/wiki/Drosera">Drosera Wiki</a>
+		</div>
+		<div class="slide">
+			<h2>WebInspector</h2>
+			<h3>Included in Safari and Chrome</h3>
+			<a href="http://trac.webkit.org/wiki/WebInspector">WebInspector</a>
+		</div>
+	</div>
+</section>
+
+<section class="slide" id="demo">
+	<div class="vcenter">
+	<h2>Have you seen the WebInspector?</h2>
+	<div class="slide">
+		<h3>Demo</h3>
+		<p><span class="info">Tip</span> In Safari you need to enable the "Develop" menu first</p>
+	</div>
+</section>
+
+<section class="slide" id="inside">
+	<div class="vcenter">
+	<h2>What's inside?</h2>
+	<h3 class="slide">DOM inspector</h3>
+	<h3 class="slide">Network tracking</h3>
+	<h3 class="slide">Script debugging</h3>
+	<h3 class="slide">Performance tuning</h3>
+</section>
+
+<section class="slide" id="architecture">
+	<div class="vcenter">
+	<h2>Built in HTML5</h2>
+	<h3 class="slide">Can run in a different process/browser</h3>
+	<h3 class="slide">Has a simple JSON based message passing protocol</h3>
+	<h3 class="slide">Has some code in C++</h3>
+</section>
+
+<section class="slide" id="c++">
+	<div class="vcenter">
+	<h2>C++</h2>
+	<h3 class="slide">Just enough to expose some hooks</h3>
+	<h3 class="slide">Overlays rendering</h3>
+	<h3 class="slide">Also exposed as extension API in Chrome</h3>
+</section>
+
+<section class="slide" id="great">
+	<div class="vcenter">
+	<h2>What makes the inspector great?</h2>
+	<h3 class="slide">Helps understand the page</h3>
+	<h3 class="slide">Fix issues faster</h3>
+	<h3 class="slide">Supports live HTML preview</h3>
+	<h3 class="slide">Supports live JS code editing</h3>
+</section>
+
+<section class="slide" id="great">
+	<div class="vcenter">
+	<h2>What's missing?</h2>
+	<div class="slide">
+		<h3>No graphical CSS inspector</h3>
+		<p>Color palette, positioned elements dragging<br />exclusion shapes, shaders inspector</p>
+	</div>
+	<div class="slide">
+		<h3>No load/save option</h3>
+		<p>You can edit the DOM, but a simple refresh will lose all the changes</p>
+	</div>
+</section>
+
+<section class="slide" id="q_and_a">
+	<div class="vcenter">
+	<h1>Q &amp; A</h1>
+	<a style="font-size: 1.2em" href="mailto:achicu@adobe.com">achicu@adobe.com</a>
+	</div>
+</section>
+
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<p class="deck-status">
+	Slide <span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<script src="../deckjs/jquery-1.7.min.js"></script>
+
+<!-- Deck Core and extensions -->
+<script src="../deckjs/core/deck.core.js"></script>
+<script src="../deckjs/extensions/hash/deck.hash.js"></script>
+<script src="../deckjs/extensions/menu/deck.menu.js"></script>
+<script src="../deckjs/extensions/goto/deck.goto.js"></script>
+<script src="../deckjs/extensions/status/deck.status.js"></script>
+<script src="../deckjs/extensions/navigation/deck.navigation.js"></script>
+
+<!-- Specific to this page -->
+<script src="introduction.js"></script>
+
+</body>
+</html>
