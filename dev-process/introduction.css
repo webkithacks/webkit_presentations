@@ -1,0 +1,26 @@
+.deck-container {
+  -webkit-transform-style: flat;
+  -webkit-perspective: 1000; }
+
+.logo {
+  background: url(ia_adobe_logo.gif);
+  width: 43px;
+  height: 72px;
+  position: absolute;
+  top: 0px;
+  right: 30px; }
+
+section.slide {
+  margin-top: 50px; }
+
+.slide {
+  border: 1px solid red;
+  font-size: 20px;
+  -webkit-transform-style: flat;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden; }
+  .slide b {
+    font-weight: bold; }
+  .slide .info {
+    font-style: italic;
+    font-weight: bold; }
