@@ -32,16 +32,28 @@
       opacity: 0.4; }
   .csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-previous {
     -webkit-transform: rotateY(90deg) translate3d(0px, 0px, -4000px);
-    -webkit-backface-visibility: hidden; }
+    transform: rotateY(90deg) translate3d(0px, 0px, -4000px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
   .csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-before {
     -webkit-transform: rotateY(90deg) translate3d(0px, 0px, -4000px);
-    -webkit-backface-visibility: hidden; }
+    transform: rotateY(90deg) translate3d(0px, 0px, -4000px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;    
+  }
   .csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-next {
     -webkit-transform: rotateY(-90deg) translate3d(0px, 0px, -4000px);
-    -webkit-backface-visibility: hidden; }
+    transform: rotateY(-90deg) translate3d(0px, 0px, -4000px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
   .csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-after {
     -webkit-transform: rotateY(-90deg) translate3d(0px, 0px, -4000px);
-    -webkit-backface-visibility: hidden; }
+    transform: rotateY(-90deg) translate3d(0px, 0px, -4000px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
   .csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-before .slide, .csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-previous .slide {
     visibility: visible; }
   .csstransitions.csstransforms .deck-container:not(.deck-menu) > .deck-child-current {
